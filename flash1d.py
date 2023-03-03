@@ -1,4 +1,4 @@
-"""Shock tube problem."""
+"""Flame and shock tube problem."""
 
 __copyright__ = """
 Copyright (C) 2020 University of Illinois Board of Trustees

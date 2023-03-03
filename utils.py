@@ -232,12 +232,14 @@ class Flash1D:
 
         xpos = x_vec[0]
         ypos = x_vec[1]
+        ones = 0*xpos + 1.
         # if self._dim == 3:
         #    zpos = x_vec[2]
 
         actx = xpos.array_context
 
         # Set up flame states
+        flame_rd = 1.*ones  # unburned everywhere
         if self.do_flame:
             flame_x0 = self._flame_loc
             flame_rd = np.dot(x_vec - flame_x0, self._flame_normal) / self._sigma
